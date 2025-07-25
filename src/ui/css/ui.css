@@ -1,0 +1,318 @@
+/* ui.css */
+
+:root{
+  --ui-main-color: var(--active-color);
+}
+
+.ui-accordion {
+  margin-bottom: 8px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #0001;
+}
+
+.ui-accordion__trigger {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark-4);
+}
+
+.ui-accordion__trigger.active {
+  color: var(--ui-main-color);
+}
+
+.ui-accordion__icon {
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+
+.ui-accordion__content {
+  overflow: hidden;
+  background: var(--light-2);
+  color: var(--gray-1);
+  font-size: 16px;
+}
+
+.ui-accordion__content-inner {
+  padding: 12px;
+}
+
+/* SELECT */
+
+.ui-select-root {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.ui-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  text-align: left;
+  border: 1px solid var(--outline);
+  background-color: #fff;
+  color: var(--dark-1);
+  cursor: pointer;
+}
+
+.ui-select-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-select-arrow {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.ui-select-arrow svg{
+  width: 20px;
+  height: auto;
+}
+.ui-select-arrow.open {
+  transform: rotate(180deg);
+}
+
+.ui-select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: var(--dark-1);
+  border: 1px solid #ccc;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.ui-select-item {
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #0001;
+}
+
+.ui-select-item:hover {
+  background: #f0f0f0;
+}
+
+.ui-select-item.selected {
+  background: #e0e0ff;
+}
+
+.ui-select-item.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.ui-select-dropdown-portal {
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+/* INPUT */
+
+.ui_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.ui_input_label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.ui_input_wrapper {
+  position: relative;
+}
+
+.ui_input_field {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.ui_input_toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* CHECKBOX */
+.ui-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  gap: 8px;
+}
+
+.ui-checkbox.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* Трек переключателя */
+.ui-checkbox-track {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 12px;
+  transition: background-color 0.25s;
+}
+
+/* Бегунок переключателя */
+.ui-checkbox-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.25s;
+}
+
+/* Включённое состояние */
+.ui-checkbox.checked .ui-checkbox-track {
+  background-color: #4cd964; /* iOS-style зелёный */
+}
+
+.ui-checkbox.checked .ui-checkbox-thumb {
+  transform: translateX(20px);
+}
+
+/* Метка */
+.ui-checkbox-label {
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+/* MODAL */
+
+.ui-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.ui-modal {
+  background: #fff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.ui-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.ui-modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  font-family: var(--Roboto);
+}
+
+.ui-modal-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.ui-modal-body {
+  margin-bottom: 16px;
+}
+
+.ui-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+
+/* OTP FIELD */
+
+.ui-otp-field {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.ui-otp-input {
+  width: 40px;
+  height: 48px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ui-otp-input:focus {
+  border-color: var(--active-color)!important;
+  outline: none;
+}
+/* - */
+.ui-otp-input.otp-success {
+  border-color: #4caf50; /* Зеленая */
+  background-color: #e9f7ee;
+}
+
+.ui-otp-input.otp-error {
+  border-color: #f44336!important; /* Красная */
+  background-color: #fbe9e7;
+}
+/* - */
