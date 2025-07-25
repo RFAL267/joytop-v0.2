@@ -1,0 +1,101 @@
+
+.main_header{
+    display: block;
+    border-bottom: solid 1px #0001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: var(--white);
+    z-index: 99;
+}
+.main_header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.main_header .menu .left{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.main_header .menu .logo{
+    display: block;
+    font-family: var(--Rubik);
+    color: var(--dark-1);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.main_header .menu .nav_list{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.main_header .menu .nav_list > a{
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark-1);
+}
+.main_header .menu .nav_list a:hover{
+    color: var(--active-color);
+}
+.main_header .menu .nav_list .active{
+    color: var(--active-color);
+}
+/* //////////////////////////////// */
+.main_header .menu .r_bar{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.main_header .menu .user_options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.main_header .menu .user_options .btn_add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+    background: #f5f5f5;
+    text-wrap-mode: nowrap;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--white);
+    background: var(--active-color);
+    border-radius: 8px;
+}
+
+
+
+
+/* MODAL */
+
+.modal_lang,
+.modal_currency{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.modal_lang button,
+.modal_currency button{
+    display: block;
+    padding: 8px 12px;
+    color: var(--active-color);
+    font-size: 18px;
+    font-family: var(--Inter);
+    border-radius: 8px;
+    border: 1px solid var(--active-color);
+}
+.modal_lang .active_lang,
+.modal_currency .active_currency{
+    background: var(--active-color);
+    color: var(--white);
+}
+

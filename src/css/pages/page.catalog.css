@@ -1,0 +1,75 @@
+/* page.catalog.css */
+
+.page_catalog{
+    display: block;
+    width: 100%;
+    background: var(--bg-light);
+    min-height: 100vh;
+}
+.page_catalog .catalog_filter{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.page_catalog .btn_filter{
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: left;
+    border: 1px solid #0001;
+}
+
+
+.page_catalog .filter_options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 8px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.page_catalog .filter_options .row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.page_catalog .filter_options .col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.page_catalog .filter_options .filter_btns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* L */
+.page_catalog .listings{
+    display: flex;
+    width: 100%;
+    background: var(--white);
+    padding: 20px 0;
+}
+.page_catalog .listings .cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 12px;
+    row-gap: 20px;
+    padding-bottom: 20px;
+}
+.page_catalog .paginator{
+    display: block;
+    padding: 50px 0;
+}

@@ -1,0 +1,55 @@
+/* panel.sidebar.css */
+
+.panel_sidebar{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    min-height: 70vh;
+    background: var(--dark-1);
+    gap: 10px;
+}
+.panel_sidebar .sidebar_header{
+    display: flex;
+    padding: 4px 12px;
+    border-bottom: 1px solid #fff1;
+}
+.panel_sidebar .back_btn{
+    padding: 16px;
+    border-radius: 8px;
+}
+.panel_sidebar nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px;
+}
+.panel_sidebar button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 10px;
+    color: var(--gray-3);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.panel_sidebar button svg{
+    color: var(--active-color);
+}
+.panel_sidebar button:hover{
+    color: var(--active-color);
+    background: var(--dark-2);
+}
+
+.panel_sidebar nav button.active{
+    background: var(--active-color);
+    color: var(--dark-1);
+}
+.panel_sidebar nav button.active svg{
+    color: var(--dark-1);
+}

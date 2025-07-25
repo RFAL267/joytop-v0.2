@@ -1,0 +1,97 @@
+
+.main_footer{
+    background: var(--dark-1);
+    color: var(--white);
+}
+.main_footer .footer_main{
+    padding: 50px 0;
+}
+.main_footer .footer_main .nav_bar{
+    display: flex;
+    flex-direction: row;
+}
+.main_footer .footer_main .nav_bar ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.main_footer .footer_main .nav_bar a{
+    color: var(--gray-2);
+    padding: 8px;
+}
+.main_footer .footer_main .nav_bar a:hover:not(.active){
+    color: var(--light-1);
+}
+.main_footer .footer_main .nav_bar .active{
+    color: var(--active-color);
+}
+
+.main_footer .footer_main .gr{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.main_footer .footer_main .gr .app_info{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.main_footer .footer_main .gr .app_info h2{
+    font-family: var(--Rubik);
+}
+.main_footer .footer_main .gr .app_info p{
+    color: var(--active-color);
+}
+.main_footer .footer_main .gr .app_info .app_links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.main_footer .footer_main .gr .app_info .app_links a img{
+    height: 40px;
+}
+.main_footer .info{
+    padding: 20px 0;
+    background: #0005;
+}
+.main_footer .info .wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.main_footer .info .wrap{
+    color: var(--gray-3);  
+}
+.main_footer .info .wrap .social_links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.main_footer .info .wrap .social_links a{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: var(--gray-3);
+}
+.main_footer .info .wrap .social_links svg{
+    width: 20px;
+}
+.main_footer .info .wrap .social_links a:hover svg{
+    color: var(--active-color)!important;
+}
+.main_footer .info .down{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 10px;
+    color: var(--gray-2);
+    text-align: center;
+}

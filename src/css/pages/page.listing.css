@@ -1,0 +1,239 @@
+/* page_listing */
+
+.page_listing {
+    display: block;
+    width: 100%;
+}
+.page_listing .listing_body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+.page_listing .listing_body .slider_wrap{
+    display: block;
+    position: relative;
+}
+.page_listing .listing_body .slider_wrap .btn_favorite{
+    display: flex;
+    padding: 12px;
+    background: var(--white);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 998;
+    margin: 10px;
+    border-radius: 12px;
+}
+.page_listing .listing_body .slider_wrap .btn_favorite svg{
+    width: 24px;
+    height: auto;
+}
+.page_listing .listing_body .slider_wrap .btn_favorite:hover{
+    background: var(--active-color);
+    color: var(--white);
+}
+
+.page_listing .listing_body .listing_title{
+    display: block;
+    font-family: var(--Roboto);
+    color: var(--dark-4);
+    margin: 10px 0;
+}
+
+.page_listing .listing_body .listing_content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+}
+
+/* Owner */
+.page_listing .listing_body .listing_content .listing_owner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.page_listing .listing_body .listing_content .listing_owner > .owner_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    top: 0;
+    position:sticky;
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_content > p{
+    display: block;
+    font-size: 18px;
+    font-family: var(--Inter);
+    font-weight: 500;
+}
+
+.page_listing .listing_body .listing_content .listing_owner .owner_card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid var(--light-4);
+    border-radius: 8px;
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_card .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_img{
+    display: block;
+    width: 40px;
+    background: #0001;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_name{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_profile{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_profile .col{
+    display: flex;
+    flex-direction: column;
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_profile .rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--Inter)!important;
+    color: var(--gray-2);
+    font-size: 14px;
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_profile span svg{
+    width: 16px;
+    color: var(--yellow);
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_contact button{
+    display: block;
+    padding: 8px;
+    border: 1px solid var(--active-color);
+    color: var(--active-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.page_listing .listing_body .listing_content .listing_owner .owner_card .owner_contact .btn_comm{
+    color: var(--white);
+    background: var(--active-color);
+}
+
+/* DETAILS */
+.page_listing .listing_body .listing_content .listing_details{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.page_listing .listing_body .listing_content .listing_details .listing_category,
+.page_listing .listing_body .listing_content .listing_details .listing_price{
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-4);
+}
+.page_listing .listing_body .listing_content .listing_details .listing_price{
+    color: var(--active-color);
+}
+.page_listing .listing_body .listing_content .listing_details .detail_text{
+    color: var(--gray-1);
+}
+
+.page_listing .listing_body .listing_content .listing_details .detail_row{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid var(--outline);
+    padding: 20px 0;
+}
+
+.page_listing .listing_body .listing_content .listing_details .detail_row .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+/* listing_specs */
+.page_listing .listing_body .listing_content .listing_details .listing_specs .spec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    width: 100%;
+}
+.page_listing .listing_body .listing_content .listing_details .listing_specs .spec .spec_title{
+    color: var(--gray-2);
+}
+
+/* features */
+
+.page_listing .listing_body .listing_content .listing_details .listing_features .feature{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: var(--gray-2);
+    align-items: center;
+}
+.page_listing .listing_body .listing_content .listing_details .listing_features .feature svg{
+    color: var(--green-ios);
+    width: 30px;
+}
+
+.page_listing .listing_body .listing_content .listing_details .listing_video video{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.page_listing .listing_body .listing_content .listing_details .listing_map .map_body{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/1;
+    background: var(--outline);
+}
+
+/* like_listings */
+.page_listing .like_listings{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+}
+.page_listing .like_listings .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.page_listing .like_listings .header .btn_all{
+    display: flex;
+    flex-direction: row;
+    text-decoration: underline;
+    align-items: center;
+}
+.page_listing .like_listings .header .btn_all svg{
+    display: block;
+    width: 24px;
+}
+.page_listing .like_listings .cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    row-gap: 20px;
+}

@@ -1,0 +1,42 @@
+/* Inter */
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-VariableFont.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-Italic-VariableFont.ttf') format('truetype');
+  font-weight: 100 900; 
+  font-style: italic;
+}
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-VariableFont.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-Italic-VariableFont.ttf') format('truetype');
+  font-weight: 100 900; 
+  font-style: italic;
+}
+/* Rubik */
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-VariableFont.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-Italic-VariableFont.ttf') format('truetype');
+  font-weight: 100 900; 
+  font-style: italic;
+}

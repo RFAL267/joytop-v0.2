@@ -1,0 +1,9 @@
+/* .ant-select-item  */
+
+.ant-select-item{
+    padding: 10px!important;
+}
+.ant-select-item-option-selected {
+    font-weight: 400!important;
+    color: var(--active-color)!important;
+}

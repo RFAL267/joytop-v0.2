@@ -1,0 +1,34 @@
+/* page.404.css */
+
+.page_404{
+    display: block;
+    background: var(--active-color);
+}
+.page_404 .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-family: var(--Rubik);
+    color: var(--white);
+}
+.page_404 .content h1{
+    font-size: 100px;
+    font-weight: 800;
+}
+.page_404 .content > p{
+    font-size: 20px;
+}
+.page_404 .content button{
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--white);
+    color: var(--active-color);
+    border-radius: 8px;
+    line-height: 100%;
+}

@@ -1,0 +1,23 @@
+
+.page_partners{
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-light-1);
+    
+}
+.page_partners .partners_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    background: var(--white);
+    margin-top: 50px;
+}
+.page_partners .partners_grid button{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid #0003;
+}

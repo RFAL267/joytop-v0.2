@@ -1,0 +1,11 @@
+.pc-questions {
+  padding: 40px 0;
+}
+.pc-questions *{
+  font-family: var(--Inter);
+}
+.pc-questions h2 {
+  font-family: var(--Inter);
+  color: var(--dark-4);
+  margin-bottom: 24px;
+}

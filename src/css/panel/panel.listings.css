@@ -1,0 +1,150 @@
+/* panel.listings.css */
+
+.panel_listings .panel_listings_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.panel_listings .panel_listings_header .btn_add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-family: var(--Inter);
+    max-width: 250px;
+    width: 100%;
+    background: var(--active-color);
+    border-radius: 12px;
+    color: var(--green-text);
+}
+
+.panel_listings .nav_bar{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.panel_listings .nav_bar button{
+    padding: 12px 32px;
+    background: #0001;
+    font-weight: 500;
+    font-family: var(--Inter);
+    font-size: 1rem;
+    border-radius: 8px;
+}
+.panel_listings .nav_bar button.active{
+    background: var(--active-color);
+    color: var(--white);
+}
+.panel_listings .ant-tabs{
+    width: 100%;
+}
+.panel_listings .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1200px;
+    width: 100%;
+}
+.panel_listings .cards .card{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--outline);
+}
+.panel_listings .cards .card .poster{
+    display: block;
+    width: 100%;
+}
+.panel_listings .cards .card .poster img{
+    display: block;
+    width:100%;
+    height: auto;
+    aspect-ratio: 4/3;
+}
+.panel_listings .cards .card .content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.panel_listings .cards .card .content .data{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+}
+.panel_listings .cards .card .content .vip{
+    font-family: var(--Inter);
+    font-size: 14px;
+}
+
+.panel_listings .cards .card .content .info_dates{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    background: var(--light-2);
+}
+.panel_listings .cards .card .content .info_dates .row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    color: var(--gray-2);
+    font-family: var(--Inter);
+    font-size: 14px;
+}
+.panel_listings .cards .card .content .info_dates svg{
+    display: block;
+    width: 1rem;
+}
+
+.panel_listings .cards .card .content .title{
+    font-family: var(--Inter);
+    font-size: 16px;
+    line-height: 20px;
+}
+.panel_listings .cards .card .content .price{
+    color: var(--active-color);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    border-radius: 8px;
+}
+.panel_listings .cards .card .content .options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.panel_listings .cards .card .content .options .show{
+    --color: var(--blue);
+    background: #4096ff20;
+    
+}
+.panel_listings .cards .card .content .options .delete{
+    --color: var(--red);
+    background: #f002;
+}
+.panel_listings .cards .card .content .options button{
+    color: var(--white);
+    font-weight: 500;
+    background: none;
+    box-shadow: none;
+    color: var(--color);
+    border: 1px solid var(--color);
+    border: none;
+    font-size: 16px;
+}
+.panel_listings .cards .card .content .options button:hover{
+    background: var(--color);
+    color: var(--white);
+}

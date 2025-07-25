@@ -1,0 +1,117 @@
+/* panel.wallet.css */
+.panel_wallet{
+    gap: 30px;
+}
+.panel_wallet .wallet_bar{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.panel_wallet .wallet_bar .wallet_card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: var(--white);
+    padding: 30px;
+    min-width: 400px;
+    color: var(--gray-1);
+}
+.panel_wallet .wallet_bar .wallet_card .wallet_card_head{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.panel_wallet .wallet_bar .wallet_card .wallet_card_head span{
+    font-size: 20px;
+}
+.panel_wallet .wallet_bar .wallet_card .wallet_card_head svg{
+    width: 20px;
+    color: var(--active-color);
+}
+.panel_wallet .payment_form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.panel_wallet .payment_form .payment_services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 800px;
+}
+.panel_wallet .payment_form .payment_services button{
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--white);
+    padding: 16px;
+    border-radius: 10px;
+    border: 2px solid var(--outline);
+}
+.panel_wallet .payment_form .payment_services button img{
+    width: 100%;
+    height: auto;
+}
+.panel_wallet .payment_form .payment_services button:hover{
+    background: transparent;
+}
+.panel_wallet .payment_form .payment_services button.selected{
+    border: 2px solid var(--blue);
+}
+
+.panel_wallet .payment_form .payment_amount{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 800px;
+}
+.panel_wallet .payment_form .payment_amount button{
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    padding: 12px;
+    background: var(--blue-1);
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+
+.panel_wallet .panel_wallet_history{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 800px;
+    width: 100%;
+}
+.panel_wallet .panel_wallet_history .table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+.panel_wallet .panel_wallet_history .table .row{
+    display: grid;
+    width: 100%;
+    background: var(--white);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--outline);
+    text-align: center;
+}
+.panel_wallet .panel_wallet_history .table .row .date{
+    color: var(--gray-2);
+}
+.panel_wallet .panel_wallet_history .table .row .type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.panel_wallet .panel_wallet_history .table .row .type .accession{
+    color: var(--green);
+}
+.panel_wallet .panel_wallet_history .table .row .type .purchase{
+    color: var(--red);
+}

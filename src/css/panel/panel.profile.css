@@ -1,0 +1,18 @@
+/* panel.main.css */
+.panel_profile .upload_label{
+    cursor: pointer;
+}
+.panel_profile .upload_label .icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--active-color);
+    color: var(--white);
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.panel_profile .upload_label_crc{
+    border: 2px solid var(--active-color);
+}

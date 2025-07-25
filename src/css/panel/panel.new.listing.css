@@ -1,0 +1,7 @@
+/* panel.new.listing */
+
+.panel_new_listing .step_btns{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
